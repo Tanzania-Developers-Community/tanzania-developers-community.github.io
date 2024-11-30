@@ -1,36 +1,167 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tanzania Developers Community Website 🇹🇿
 
-## Getting Started
+A website connecting and showcasing the vibrant developer community in Tanzania. This project serves as the first step in building a comprehensive platform for Tanzanian developers.
 
-First, run the development server:
+![Project Status](https://img.shields.io/badge/status-active-success.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
+## 🌟 Current Features
+
+- Community overview and mission statement
+- Featured developers and projects
+- Upcoming tech events calendar
+- Blog posts and tech articles
+- Community guidelines
+- Contact and social media links
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 15
+- **Language:** TypeScript
+- **UI Components:** shadcn/ui
+- **Styling:** TailwindCSS
+- **Deployment:** GitHub Pages
+- **Content Management:** TSX/MD/MDX for content
+
+## 🗺️ Platform Roadmap
+
+### Phase 1: Website Launch (Current)
+- ✅ Responsive landing page
+- 🔄️ Event listings
+- 🔄️ Blog section
+- 🔄️ Community showcases
+
+### Phase 2: Community Features (Q2 2025)
+- 🔄 User authentication and profiles
+- 🔄 Developer directory
+- 🔄 Project portfolio showcases
+- 🔄 Interactive event calendar
+
+### Phase 3: Collaboration Tools (Q3 2025)
+- 📋 Discussion forums
+- 📋 Resource sharing platform
+- 📋 Job board
+- 📋 Mentorship matching system
+
+### Phase 4: Platform Growth (2026)
+- 📋 Real-time chat and networking
+- 📋 Virtual meetup capabilities
+- 📋 Learning management system
+- 📋 API for community integrations
+
+## 📋 Prerequisites
+
+- Node.js 20.0 or higher
+- pnpm 8.x>
+
+## 🚀 Getting Started
+
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/tanzania-developers/community-website.git
+cd community-website
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Set up environment variables:
+```bash
+cp .env.example .env.local
+```
 
-## Learn More
+4. Start the development server:
+```bash
+pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Visit `http://localhost:3000` to view the website.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🏗️ Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/
+│   ├── blog/
+│   ├── events/
+│   ├── about/
+│   └── layout.tsx
+├── components/
+│   ├── ui/
+│   └── shared/
+├── content/
+│   ├── blog/
+│   └── events/
+├── lib/
+│   └── utils/
+└── styles/
+```
 
-## Deploy on Vercel
+## 🤝 Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+We welcome contributions from developers of all skill levels! Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting a PR.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 Environment Variables
+
+```env
+NEXT_PUBLIC_SITE_URL="http://localhost:3000"
+NEXT_PUBLIC_GA_ID="your-analytics-id"
+```
+
+## 🧪 Running Tests
+
+```bash
+
+# Run unit tests
+pnpm test
+
+# Run tests with coverage
+pnpm test:coverage
+```
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👥 Core Team
+
+- [Alpha Olomi] (@alphaolomi) - Project Lead
+
+<!--
+- [Team Member] (@username) - Frontend Developer
+- [Team Member] (@username) - Content Manager
+-->
+
+## 🙏 How to Support
+
+- Star this repository
+- Share with other developers in Tanzania
+- Contribute to the codebase
+- Provide feedback and suggestions
+- Join our community events
+
+## 📞 Contact
+
+- Website: [https://tanzaniadevs.org](https://tanzania-developers-community.github.io/)
+
+<!--
+- Twitter: [@TanzaniaDevs](https://twitter.com/tanzaniadevs)
+-->
+
+## 🌱 Getting Involved
+
+We're looking for contributors who can help us build the future platform features. If you're interested in any of the roadmap items, please reach out to us through:
+
+1. Opening an issue to discuss implementation,
+2. Joining our WhatsApp community,
+3. Emailing admin at alphaolomi at gmail dot com.
