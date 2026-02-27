@@ -4,23 +4,39 @@ import { Button } from '@/components/ui/button'
 
 export default function Header() {
   return (
-    <header className="border-b border-gray-200">
-      <div className="container mx-auto px-4 py-0 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold">
-          <Image src="/logo.jpg" alt="Logo" width={100} height={20} />
+    <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo.jpg"
+            alt="Tanzania Developers Community Logo"
+            width={120}
+            height={40}
+            priority
+          />
         </Link>
-        <nav className="space-x-4">
-          <Link href="#about" className="hover:underline">About</Link>
-          <Link href="#projects" className="hover:underline">Projects</Link>
+
+        <nav className="hidden md:flex space-x-6 items-center">
+          <Link href="#about" className="text-gray-700 hover:text-black transition-colors">
+            About
+          </Link>
+          <Link href="#projects" className="text-gray-700 hover:text-black transition-colors">
+            Projects
+          </Link>
+
           <Button variant="outline" asChild>
-            {/* 
-            TDB: This is a placeholder link. Replace with your own link.
-              <Link href="https://madein.co.tz">Made In Tanzania</Link> */}
-            <Link href="https://tanzania-developers-community.github.io/made-in-tanzania/">Made In Tanzania</Link>
+            <Link
+              href="https://tanzania-developers-community.github.io/made-in-tanzania/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Made In Tanzania
+            </Link>
           </Button>
         </nav>
+
       </div>
     </header>
   )
 }
-
